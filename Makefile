@@ -20,4 +20,13 @@ deploy: build
 	npx gh-pages -d dist
 
 serve:
-	npx vite preview
+	npx vite preview --host 0.0.0.0
+
+compose:
+	docker compose up --abort-on-container-exit
+
+compose-build:
+	docker compose build
+
+compose-down:
+	docker compose down -v --remove-orphans

@@ -1,0 +1,9 @@
+---
+
+services:
+  app:
+    image: fey/react-vite-app:latest
+    build:
+      context: .
+    ports:
+      - 4173:4173
