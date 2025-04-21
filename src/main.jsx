@@ -9,6 +9,6 @@ const root = ReactDOM.createRoot(mountNode);
 
 root.render(
   <StrictMode>
-    <Card />
+    {/* <Card /> */}
   </StrictMode>
 );
