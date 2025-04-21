@@ -5,10 +5,10 @@ start:
 	npx vite
 
 lint:
-	npx eslint
+	npx eslint src
 
 lint-fix:
-	npx eslint --fix
+	npx eslint src --fix
 
 test:
 	echo 1

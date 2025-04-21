@@ -10,6 +10,10 @@ const __dirname = path.dirname(__filename);
 // https://vite.dev/config/
 export default defineConfig({
   base: '',
+  server: {
+    port: 3000,
+    open: true,
+  },
   plugins: [react()],
   resolve: {
     alias: {
