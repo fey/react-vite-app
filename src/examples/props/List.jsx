@@ -7,7 +7,7 @@ class List extends React.Component {
 
     return (
       <ul>
-        {data.map(item => <li>{item.name}</li>)}
+        {data.map((item) => <li key={name}>{item.name}</li>)}
       </ul>
     );
   }
