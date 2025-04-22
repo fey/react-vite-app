@@ -17,13 +17,12 @@ export default class Clicker extends React.Component {
     const { count } = this.state;
     return (
       <div>
-        <p>{count}</p>
         <button
           type="button"
           className="btn btn-primary"
           onClick={this.handleClick}
         >
-          Click
+          Click, clicked: {count}
         </button>
       </div>
     );

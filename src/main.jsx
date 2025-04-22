@@ -12,8 +12,13 @@ const root = ReactDOM.createRoot(mountNode);
 
 root.render(
   <StrictMode>
+    <h2>Card</h2>
     <Card />
+    <hr/>
+    <h2>Clock</h2>
     <Clock />
+    <hr/>
+    <h2>Clicker</h2>
     <Clicker />
   </StrictMode>
 );
