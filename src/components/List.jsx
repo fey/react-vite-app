@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 class List extends React.Component {
   render() {
@@ -7,17 +7,17 @@ class List extends React.Component {
 
     return (
       <ul>
-        {data.map((item) => <li key={name}>{item.name}</li>)}
+        {data.map(item => <li key={name}>{item.name}</li>)}
       </ul>
-    );
+    )
   }
 }
 
 const items = [
   { name: 'first' },
-  { name: 'second' }
-];
+  { name: 'second' },
+]
 
-const mountNode = document.getElementById('root');
-const root = ReactDOM.createRoot(mountNode);
-root.render(<List data={items} />);
+const mountNode = document.getElementById('root')
+const root = ReactDOM.createRoot(mountNode)
+root.render(<List data={items} />)

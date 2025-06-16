@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react'
 
 export default class Clicker extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.state = { count: 0 };
+    this.state = { count: 0 }
   }
 
   handleClick = () => {
     this.setState((state) => {
-      const { count } = state;
+      const { count } = state
 
-      return { count: count + 1 };
+      return { count: count + 1 }
     })
   }
 
   render() {
-    const { count } = this.state;
+    const { count } = this.state
     return (
       <div>
         <button
@@ -24,9 +24,11 @@ export default class Clicker extends React.Component {
           className="btn btn-primary"
           onClick={this.handleClick}
         >
-          Click, clicked: {count}
+          Click, clicked:
+          {' '}
+          {count}
         </button>
       </div>
-    );
+    )
   }
 }

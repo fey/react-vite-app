@@ -1,14 +1,19 @@
-import React from "react";
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 class HelloMessage extends React.Component {
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return (
+      <div>
+        Hello
+        {this.props.name}
+      </div>
+    )
   }
 }
 
-const mountNode = document.getElementById('root');
-const root = ReactDOM.createRoot(mountNode);
+const mountNode = document.getElementById('root')
+const root = ReactDOM.createRoot(mountNode)
 
 const vdom = (
   <div className="row">
@@ -19,6 +24,6 @@ const vdom = (
       <HelloMessage name="Mark" />
     </div>
   </div>
-);
+)
 
-root.render(vdom);
+root.render(vdom)

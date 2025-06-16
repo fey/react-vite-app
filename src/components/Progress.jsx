@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
 export default class Progress extends React.Component {
   render() {
-    const percentage = this.props.percentage;
+    const percentage = this.props.percentage
     return (
       <div>
         <h2>Progress</h2>
@@ -17,13 +17,13 @@ export default class Progress extends React.Component {
             aria-valuemax="100"
             aria-label="Progressbar"
           >
-            </div>
+          </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
 Progress.defaultProps = {
   percentage: 0,
-};
+}
