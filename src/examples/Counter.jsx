@@ -25,11 +25,15 @@ Counter.defaultProps = {
   count: 0,
 }
 
-// const vdom = <div>
-//   <Counter />
-//   <Counter count={5} />
-// </div>;
+/*
+ * const vdom = <div>
+ *   <Counter />
+ *   <Counter count={5} />
+ * </div>;
+ */
 
-// const mountNode = document.getElementById('react-root');
-// const root = ReactDOM.createRoot(mountNode);
-// root.render(vdom);
+/*
+ * const mountNode = document.getElementById('react-root');
+ * const root = ReactDOM.createRoot(mountNode);
+ * root.render(vdom);
+ */

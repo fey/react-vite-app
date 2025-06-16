@@ -5,7 +5,10 @@ export default class Carousel extends React.Component {
   constructor(props) {
     super(props)
     const images = props.images
-    this.state = { currentIndex: 0, images }
+    this.state = {
+      currentIndex: 0,
+      images
+    }
   }
 
   nextImage = () => {
@@ -29,7 +32,10 @@ export default class Carousel extends React.Component {
           {this.state.images.map((image, index) => (
             <div
               key={index}
-              className={cn('carousel-item', { active: index === currentIndex })}
+              className={cn(
+                'carousel-item',
+                { active: index === currentIndex },
+              )}
             >
               <img
                 className="d-block w-100"

@@ -3,11 +3,13 @@ import React, { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.css'
 
-// import Clock from './examples/Clock'
-// import Card from './components/Card'
-// import Clicker from './examples/Clicker'
-// import Buttons from './examples/Buttons'
-// import BtnGroup from './components/BtnGroup'
+/*
+ * import Clock from './examples/Clock'
+ * import Card from './components/Card'
+ * import Clicker from './examples/Clicker'
+ * import Buttons from './examples/Buttons'
+ * import BtnGroup from './components/BtnGroup'
+ */
 import Carousel from './examples/Carousel'
 
 const images = [

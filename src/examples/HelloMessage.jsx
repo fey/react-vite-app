@@ -15,15 +15,14 @@ class HelloMessage extends React.Component {
 const mountNode = document.getElementById('root')
 const root = ReactDOM.createRoot(mountNode)
 
-const vdom = (
-  <div className="row">
-    <div className="col-6">
-      <HelloMessage name="Kate" />
+const vdom = ( <div className="row">
+      <div className="col-6">
+        <HelloMessage name="Kate" />
+      </div>
+      <div className="col-6">
+        <HelloMessage name="Mark" />
+      </div>
     </div>
-    <div className="col-6">
-      <HelloMessage name="Mark" />
-    </div>
-  </div>
-)
+  )
 
 root.render(vdom)

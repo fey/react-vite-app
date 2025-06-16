@@ -4,7 +4,10 @@ import classNames from 'classnames'
 export default class Buttons extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { count: 1, primary: false }
+    this.state = {
+      count: 1,
+      primary: false
+    }
   }
 
   onIncrement = () => {
@@ -25,7 +28,9 @@ export default class Buttons extends React.Component {
   render() {
     const buttonClass = classNames([
       'btn',
-      this.state.primary ? 'btn-primary' : 'btn-secondary',
+      this.state.primary
+        ? 'btn-primary'
+        : 'btn-secondary',
     ])
     return (
       <div>

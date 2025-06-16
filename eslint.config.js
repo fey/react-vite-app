@@ -20,7 +20,7 @@ export default defineConfig([
   pluginReact.configs.flat.recommended,
   {
     "rules": {
-      "react/prop-types": "off"
+      "react/prop-types": "off",
     },
   },
 

@@ -40,7 +40,7 @@ export default class BtnGroup extends React.Component {
       </div>
     )
   }
-};
+}
 
 BtnGroup.defaultProps = {
   leftActive: false,
