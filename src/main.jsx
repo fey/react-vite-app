@@ -6,19 +6,27 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Clock from './examples/Clock';
 import Card from './components/Card';
 import Clicker from './examples/Clicker';
+import Buttons from './examples/Buttons';
+import BtnGroup from './components/BtnGroup';
 
 const mountNode = document.getElementById('root');
 const root = ReactDOM.createRoot(mountNode);
 
 root.render(
   <StrictMode>
-    <h2>Card</h2>
+    {/* <h2>Card</h2>
     <Card />
-    <hr/>
+    <hr />
     <h2>Clock</h2>
     <Clock />
-    <hr/>
+    <hr />
     <h2>Clicker</h2>
     <Clicker />
+    <hr />
+    <h2>Buttons</h2>
+    <Buttons />
+    <hr /> */}
+    <h2>BtnGroup</h2>
+    <BtnGroup />
   </StrictMode>
 );

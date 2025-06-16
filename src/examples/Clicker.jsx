@@ -8,9 +8,11 @@ export default class Clicker extends React.Component {
   }
 
   handleClick = () => {
-    this.setState({
-      count: this.state.count + 1
-    });
+    this.setState((state) => {
+      const { count } = state;
+
+      return { count: count + 1 };
+    })
   }
 
   render() {
